@@ -1,6 +1,6 @@
 # OpenAI-DecisionApi-CSharp-Sample
 
-![OpenAI Decisions API](Decisions API in Azure OpenAI - A CSharp Walkthrough.webp)
+![OpenAI Decisions API](DecisionsAPIinAzureOpenAI.webp)
 
 ![.NET 10](https://img.shields.io/badge/.NET-10.0-512BD4?logo=dotnet&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
