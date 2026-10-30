@@ -1,4 +1,4 @@
-# OpenAI-DecisionApi-CSharp-Sample
+# Azure OpenAI Decisions API for C# and .NET 10 on Microsoft Foundry
 
 ![OpenAI Decisions API](DecisionsAPIinAzureOpenAI.webp)
 
@@ -9,6 +9,12 @@
 ![Azure Identity](https://img.shields.io/badge/Azure%20Identity-DefaultAzureCredential-0089D6)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
 ![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red)
+
+- 📖 Full walkthrough: [Decisions API in Azure OpenAI: A C# Walkthrough](https://taswar.zeytinsoft.com/decisions-api-in-azure-openai-a-c-walkthrough/)
+- ⭐ If this saved you time, star the repo so other .NET developers can find it.
+- For more C# Samples using other AI Models check out [AI models for C# developers](https://taswar.zeytinsoft.com/foundry-ai-models-csharp/)
+- For my Free Ebook on Prompt Engineering check out [Prompt Engineering for .NET Developers](https://github.com/taswar/PromptEngineeringForDotNetDevelopers)
+
 
 A small .NET 10 console app that sends a support ticket to the **Azure OpenAI Decisions API**. It prints:
 
