@@ -10,9 +10,9 @@
 ![Azure Identity](https://img.shields.io/badge/Azure%20Identity-DefaultAzureCredential-0089D6)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
 
-- 📖 Full walkthrough: [Decisions API in Azure OpenAI: A C# Walkthrough](https://taswar.zeytinsoft.com/decisions-api-in-azure-openai-a-c-walkthrough/)
+- 📖 Full walkthrough: [Decisions API in Azure OpenAI: A C# Walkthrough](https://taswar.zeytinsoft.com/decisions-api-in-azure-openai-a-c-walkthrough/?utm_source=github&utm_medium=readme&utm_campaign=OpenAI-DecisionApi-CSharp-Sample&utm_content=walkthrough)
 - ⭐ If this saved you time, star the repo so other .NET developers can find it.
-- For more C# Samples using other AI Models check out [AI models for C# developers](https://taswar.zeytinsoft.com/foundry-ai-models-csharp/)
+- For more C# Samples using other AI Models check out [AI models for C# developers](https://taswar.zeytinsoft.com/foundry-ai-models-csharp/?utm_source=github&utm_medium=readme&utm_campaign=OpenAI-DecisionApi-CSharp-Sample&utm_content=ai-models-hub)
 - For my Free Ebook on Prompt Engineering check out [Prompt Engineering for .NET Developers](https://github.com/taswar/PromptEngineeringForDotNetDevelopers)
 
 
