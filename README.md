@@ -1,14 +1,14 @@
 # Azure OpenAI Decisions API for C# and .NET 10 on Microsoft Foundry
 
-![OpenAI Decisions API](DecisionsAPIinAzureOpenAI.webp)
+![Azure OpenAI Decisions API for C# developers on Microsoft Foundry](DecisionsAPIinAzureOpenAI.webp)
 
+[![build](https://github.com/taswar/OpenAI-DecisionApi-CSharp-Sample/actions/workflows/dotnet.yml/badge.svg)](https://github.com/taswar/OpenAI-DecisionApi-CSharp-Sample/actions/workflows/dotnet.yml)
 ![.NET 10](https://img.shields.io/badge/.NET-10.0-512BD4?logo=dotnet&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![C# Developers](https://img.shields.io/badge/For-C%23%20Developers-239120)
 ![Decisions API](https://img.shields.io/badge/Azure%20OpenAI-Decisions%20API-orange)
 ![Azure Identity](https://img.shields.io/badge/Azure%20Identity-DefaultAzureCredential-0089D6)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
-![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red)
 
 - 📖 Full walkthrough: [Decisions API in Azure OpenAI: A C# Walkthrough](https://taswar.zeytinsoft.com/decisions-api-in-azure-openai-a-c-walkthrough/)
 - ⭐ If this saved you time, star the repo so other .NET developers can find it.
@@ -24,10 +24,21 @@ A small .NET 10 console app that sends a support ticket to the **Azure OpenAI De
 
 If the model refuses to answer a question, the app says to send the ticket to a person instead of treating the refusal as a low probability.
 
+## Quick start
+
+```bash
+git clone https://github.com/taswar/OpenAI-DecisionApi-CSharp-Sample.git
+cd OpenAI-DecisionApi-CSharp-Sample
+dotnet user-secrets set "AZURE_OPENAI_ENDPOINT" "https://<resource>.openai.azure.com"
+dotnet run
+```
+
+Without an API key, the app signs in with Entra ID, so run `az login` first. See [Configuration](#configuration) for all settings.
+
 ## Prerequisites
 
 - [.NET 10 SDK](https://dotnet.microsoft.com/download)
-- An Azure OpenAI resource with a model deployment that supports the Decisions API
+- An Azure OpenAI resource with a `gpt-6-luna` deployment. GPT-6 Luna is currently the only model the Decisions API supports, and the API is generally available in Microsoft Foundry.
 - Either an API key for the resource, or Azure credentials that `DefaultAzureCredential` can use (for example, `az login`) and permission to call the resource
 
 ## Configuration
@@ -104,11 +115,12 @@ The response shape differs from what the parser expects. Print the raw response 
 
 ## Related projects
 
-Looking for a different decision model? See the companion sample:
+Looking for a different decision model, or a reranker for RAG? See the companion samples:
 
 - **[Microsoft-Decision-1 C# Demo](https://github.com/taswar/Microsoft-Decision-1-Csharp-Demo)** is a .NET 10 console app that uses **Microsoft-Decision-1**, the decision model in Microsoft Foundry, for fast decision scoring. It routes a support ticket to a team, scores its severity, and checks for repeat contact, using `DefaultAzureCredential`.
+- **[Cohere Rerank v5 Pro & Fast C# Sample](https://github.com/taswar/Cohere-Rerank-V5-Pro-Fast-Csharp-Sample)** is a .NET 10 console app that reranks search results for RAG with **Cohere Rerank v5 Pro and Fast** on Microsoft Foundry, and uses a calibrated score to decide which passages reach the chat model.
 
-Comparing the two samples shows the same support-ticket triage done with the Azure OpenAI Decisions API (predicate, choice, and score questions) and with Microsoft-Decision-1 (choice, score, and noul questions) in C#.
+Comparing this sample with the Decision-1 demo shows the same support-ticket triage done with the Azure OpenAI Decisions API (predicate, choice, and score questions) and with Microsoft-Decision-1 (choice, score, and noul questions) in C#.
 
 ## License
 
